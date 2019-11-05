@@ -1,3 +1,17 @@
+.animated-background {
+    animation: pulse 5s infinite;
+  }
+
+@keyframes pulse {
+    0% {
+      background-color: rgb(10, 169, 180);
+    }
+    100% {
+      background-color: rgb(236, 20, 9);
+    }
+  }
+
+
 body {
     background-color: rgb(0, 255, 255);
     font-family: 'Inconsolata', monospace;
