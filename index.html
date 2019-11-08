@@ -9,9 +9,17 @@
         <main>
             <h1>Tomek's Mobile Museum App</h1>
             <!-- Form for making painting selections-->
-            <form>
-                <div></div>
-                <div></div>
+            <form onsubmit="submitChoices(); return false"></form>
+                <div>
+                    <select name="author" id="author">
+                            <option value="Gerard van Honthorst">Gerard van Honthorst</option>
+                            <option value="Meester van de Heilige Elisabeth-Panelen">Meester van de Heilige Elisabeth-Panelen</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="default">Submit</button>
+                </div>
 
             </form>
 

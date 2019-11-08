@@ -326,15 +326,28 @@ const data = {
     ]
   }
 
+// SUBMIT USER INPUT 
+function updatetChoices() {
+  const authorList = document.getElementById('author');
+  const authorSelection = authorList.value;
+
+}
+
+
+
+
 // Iterate through the object array
 let paintings = data.artObjects
 for (let i=1; i < paintings.length; i++) {
 //  console.log(paintings[i]);
   let currentPainting = paintings[i];
-  displayPaintings(currentPainting);
+  // if (currentPainting.principalOrFirstMaker !== "Honthorst" && currentPainting.webImage.width <1500 && ) {
 
-  console.log(currentPainting);
+      displayPaintings(currentPainting);
 }
+ // }
+ // console.log(currentPainting);
+
 
 //Start of code 
 function displayPaintings(currentPainting) {
@@ -354,6 +367,12 @@ function displayPaintings(currentPainting) {
       document.getElementById('gallery').appendChild(imageLink);
 
   }
+
+//Function for getting selected painting
+
+
+//console.log(document.getElementById('author').value)
+
 
 
 
