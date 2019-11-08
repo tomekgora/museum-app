@@ -1,0 +1,35 @@
+What I still want to do with this page:
+    - Make the image link to the details page  
+    - Make the details page show the right painting and information about that painting
+    - Add a menu to refresh the page displaying only certain paintings
+            = according to a date selection
+            = according to size (width/height)
+            = according to painter
+            = alphabetically
+            = by year of painting 
+
+
+Make sure to delete this file before I push
+
+
+
+The next project was a flash-card game:
+    - Allow the user to select different categories to be tested only
+    - See flash card 
+    - Click it and see the answer
+    - Move to the next question
+    - Select number of questions that you want to be tested on
+    - Make it into a reverse test
+        - be shown definitions
+        - Type the answer in or choose from four different answers
+    
+    - Be able to save my own results (locally)
+    - Be able to view my own results over time
+    - See my results as a chart over time
+    - Be able to add my own questions and answers to the quiz
+        - select the category of the question
+        - create new categories
+
+    For starters:
+    - make list of questions = answers
+    
