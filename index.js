@@ -326,36 +326,35 @@ const data = {
     ]
   }
 
-// Iterate through the object array
-let paintings = data.artObjects
+let paintings = data.artObjects;
+console.log(paintings);
+
 for (let i=1; i < paintings.length; i++) {
-//  console.log(paintings[i]);
-  let currentPainting = paintings[i];
-  displayPaintings(currentPainting);
-
-  console.log(currentPainting);
-}
-
-//Start of code 
-function displayPaintings(currentPainting) {
-// 
+  console.log(paintings[i]);
+  
 // Create the elements 
-      const imageLink = document.createElement('a');
-      const image = document.createElement('img');
-
+  const imageLink = document.createElement('a');
+  const image = document.createElement('img');
+  
 // Adjust the elements
-      imageLink.href = "./pages/detail-page.html"
-      image.classList.add('artObject');
-      image.alt = currentPainting.title
-      image.src = currentPainting.webImage.url
-      imageLink.appendChild(image);
+  imageLink.href = "./pages/detail-page.html"
+  image.classList.add('artObject');
+  image.alt = paintings[i].title
+  image.src = paintings[i].webImage.url
+  imageLink.appendChild(image);
 
 // Display the elements
-      document.getElementById('gallery').appendChild(imageLink);
+  document.getElementById('gallery').appendChild(imageLink);
 
-  }
+}
+//Filter only width bigger than 1500
+/*
+const result = data.artObjects[i].longTitle.filter(data => word.length > 6);
 
+data.artObjects[0].longTitle
 
+data.artObjects[0].principalOrFirstMaker
+*/
 
 //Add a selection menu giving the possibility to make specific selections of the works 
 //of art that will be displayed. i.e. based on author, year etc. 
@@ -366,6 +365,7 @@ function displayPaintings(currentPainting) {
 //               Select range of years when the painting was created
 
 
+// Make the list of author choices based on data in the object file
 
 
 

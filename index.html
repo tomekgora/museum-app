@@ -8,10 +8,34 @@
     <body class="animated-background">
         <main>
             <h1>Tomek's Mobile Museum App</h1>
-            <!-- Form for making painting selections-->
+            <!-- Form for making painting-->
             <form>
-                <div></div>
-                <div></div>
+                <div>
+                    <label for="authors">Select painter:</label>
+                    <select name="authors">
+                        <option value="Vermeer">Vermeer</option>
+                        <option value="Rembrandt">Rembrandt</option>
+                        <!--   I need to construct this option based on the Authors available in the data object
+                            so value of name = author in data object
+                     -->
+                    </select>
+                </div>
+
+                <div>
+                    <label for="startDate">From:</label>
+                    <input type="year" id="startDate" name="start_date">
+
+                </div>
+
+                <div>
+                        <label for="endtDate">Untill:</label>
+                        <input type="year" id="endDate" name="end_date">
+    
+                    </div>
+                <!-- Pressing the submit button should change the paintings according to user specs-->
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
 
             </form>
 
@@ -29,3 +53,5 @@
     </body>
   
 </html>
+
+<!-- Add selectors for add/include author, select time range (start and end) -->
