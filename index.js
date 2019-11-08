@@ -351,28 +351,8 @@ function displayPainting(painting) {
   imageLink.appendChild(image);
 
 // Display the elements
-  document.getElementById('gallery').appendChild(imageLink);
+  document.getElementBId('gallery').appendChild(imageLink);
 
 }
-//Filter only width bigger than 1500
-/*
-const result = data.artObjects[i].longTitle.filter(data => word.length > 6);
-
-data.artObjects[0].longTitle
-
-data.artObjects[0].principalOrFirstMaker
-*/
-
-//Add a selection menu giving the possibility to make specific selections of the works 
-//of art that will be displayed. i.e. based on author, year etc. 
-
-//Pass data from here to the details-page
-
-//Create a form: Select author from list of authors (present in the dataset)
-//               Select range of years when the painting was created
-
-
-// Make the list of author choices based on data in the object file
-
 
 
