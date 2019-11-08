@@ -326,29 +326,44 @@ const data = {
     ]
   }
 
-//Start of code 
-
-  let paintings = data.artObjects
-
+// Iterate through the object array
+let paintings = data.artObjects
 for (let i=1; i < paintings.length; i++) {
-    console.log(paintings[i]);
+  console.log(paintings[i]);
+  let currentPainting = paintings[i];
+  displayPaintings(currentPainting);
+
+  console.log(currentPainting);
+}
+
+//Start of code 
+function displayPaintings(currentPainting) {
+// 
+      let current = currentPainting;
 
 // Create the elements 
-    const imageLink = document.createElement('a');
-    const image = document.createElement('img');
+      const imageLink = document.createElement('a');
+      const image = document.createElement('img');
 
 // Adjust the elements
-    imageLink.href = "./pages/detail-page.html"
-    image.classList.add('artObject');
-    image.alt = data.artObjects[i].title
-    image.src = data.artObjects[i].webImage.url
-
-    imageLink.innerHTML = image;
+      imageLink.href = "./pages/detail-page.html"
+      image.classList.add('artObject');
+      image.alt = current.title
+      image.src = current.webImage.url
+      imageLink.appendChild(image);
 
 // Display the elements
-    document.getElementById('gallery').appendChild(image);
-    console.log(image);
-        
-}
+      document.getElementById('gallery').appendChild(imageLink);
+
+  }
+
+ 
+displayPaintings();
+
+
+//Add a selection menu giving the possibility to make specific selections of the works 
+//of art that will be displayed. i.e. based on author, year etc. 
+
+
 
 
