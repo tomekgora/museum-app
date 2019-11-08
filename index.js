@@ -326,21 +326,28 @@ const data = {
     ]
   }
 
+
+
 let paintings = data.artObjects;
-console.log(paintings);
+// console.log(paintings);
 
 for (let i=1; i < paintings.length; i++) {
-  console.log(paintings[i]);
+  let currentPainting = paintings[i];
+  displayPainting(currentPainting);
+}
+// console.log(paintings[i]);
+
+function displayPainting(painting) {
   
 // Create the elements 
   const imageLink = document.createElement('a');
   const image = document.createElement('img');
-  
+
 // Adjust the elements
   imageLink.href = "./pages/detail-page.html"
   image.classList.add('artObject');
-  image.alt = paintings[i].title
-  image.src = paintings[i].webImage.url
+  image.alt = painting.title
+  image.src = painting.webImage.url
   imageLink.appendChild(image);
 
 // Display the elements
