@@ -329,7 +329,7 @@ const data = {
 // Iterate through the object array
 let paintings = data.artObjects
 for (let i=1; i < paintings.length; i++) {
-  console.log(paintings[i]);
+//  console.log(paintings[i]);
   let currentPainting = paintings[i];
   displayPaintings(currentPainting);
 
@@ -339,8 +339,6 @@ for (let i=1; i < paintings.length; i++) {
 //Start of code 
 function displayPaintings(currentPainting) {
 // 
-      let current = currentPainting;
-
 // Create the elements 
       const imageLink = document.createElement('a');
       const image = document.createElement('img');
@@ -348,8 +346,8 @@ function displayPaintings(currentPainting) {
 // Adjust the elements
       imageLink.href = "./pages/detail-page.html"
       image.classList.add('artObject');
-      image.alt = current.title
-      image.src = current.webImage.url
+      image.alt = currentPainting.title
+      image.src = currentPainting.webImage.url
       imageLink.appendChild(image);
 
 // Display the elements
@@ -357,12 +355,16 @@ function displayPaintings(currentPainting) {
 
   }
 
- 
-displayPaintings();
 
 
 //Add a selection menu giving the possibility to make specific selections of the works 
 //of art that will be displayed. i.e. based on author, year etc. 
+
+//Pass data from here to the details-page
+
+//Create a form: Select author from list of authors (present in the dataset)
+//               Select range of years when the painting was created
+
 
 
 
